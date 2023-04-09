@@ -1,27 +1,19 @@
 {
   "compilerOptions": {
-    "target": "es6",
-    "module": "esnext",
-    "outDir": "dist",
-    "moduleResolution": "node",
-    "noEmit": false,
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": false,
-    "forceConsistentCasingInFileNames": true,
-    "incremental": true,
-    "esModuleInterop": true,
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "lib": ["ESNext", "DOM"],
+    "moduleResolution": "Node",
+    "strict": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "lib": [
-      "es2022"
-    ]
+    "esModuleInterop": true,
+    "noEmit": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "skipLibCheck": true
   },
-  "include": [
-    "./src/**/*.ts",
-    "main.ts",
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["src"]
 }
