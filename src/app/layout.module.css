@@ -1,0 +1,74 @@
+.wrap {
+  display: flex;
+  flex-flow: column;
+  width: 100vw;
+  height: 100vh;
+}
+.head {
+  flex: 0 0 56px;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 16px;
+}
+.head i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px dashed #fff;
+  font-size: 24px;
+  font-weight: 900;
+  color: #fff;
+}
+.head .inner {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+  height: 44px;
+}
+.head h1 {
+  font-size: 20px;
+  color: #fff;
+}
+.head p {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  font-size: 12px;
+  color: #9ca3af;
+}
+.main {
+  overflow-x: hidden;
+  overflow-y: auto;
+  flex: 1;
+  padding: 16px;
+}
+.foot {
+  flex: 0 0 56px;
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 40px;
+  padding: 8px 16px;
+}
+.foot dl {
+  display: flex;
+  flex-flow: column;
+  gap: 4px;
+  height: 40px;
+}
+.foot dt {
+  font-size: 14px;
+  color: #9ca3af;
+}
+.foot dd {
+  font-size: 12px;
+  color: #dee9fa;
+}
+.foot a {
+  color: #2277ff;
+}
