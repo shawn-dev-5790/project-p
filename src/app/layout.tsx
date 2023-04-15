@@ -14,28 +14,34 @@ export default function RootLayout({ children }: GILayout) {
   return (
     <html lang='ko'>
       <body>
-        <div className={ui.wrap}>
+        <div className={ui.app}>
           <header className={ui.head}>
-            <i>PP</i>
-            <div className={ui.inner}>
+            <Link className={ui.logo} href={repositoryURL} target='_black'>
+              PP
+            </Link>
+            <div className={ui.title}>
               <h1>{metadata.title}</h1>
               <p>{metadata.description}</p>
             </div>
           </header>
           <main className={ui.main}>{children}</main>
           <footer className={ui.foot}>
-            <dl>
-              <dt>Created By</dt>
-              <dd>{authorEmail}</dd>
-            </dl>
-            <dl>
-              <dt>Repository</dt>
-              <dd>
-                <Link href={repositoryURL} target='_black'>
-                  {repositoryURL.replace('https://', '')}
-                </Link>
-              </dd>
-            </dl>
+            <small>
+              <dl>
+                <dt>Repository</dt>
+                <dd>
+                  <Link href={repositoryURL} target='_black'>
+                    {repositoryURL.replace('https://', '')}
+                  </Link>
+                </dd>
+              </dl>
+            </small>
+            <small>
+              <dl>
+                <dt>Created By</dt>
+                <dd>{authorEmail}</dd>
+              </dl>
+            </small>
           </footer>
         </div>
       </body>

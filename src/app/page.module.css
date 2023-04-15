@@ -1,4 +1,44 @@
-.wrap {
+.home {
+  display: flex;
+  flex-flow: column;
+  gap: 24px;
+}
+.home section {
+  display: flex;
+  flex-flow: column;
+  gap: 8px;
+  padding: 16px;
+  background: radial-gradient(
+    circle,
+    rgba(17, 17, 17, 0.1) 10%,
+    rgba(17, 17, 17, 0.9) 90%
+  );
+}
+section.overview {
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  height: auto;
+}
+section.overview .cont_main {
+  flex: 1.5;
+  display: flex;
+  flex-flow: column;
+  gap: 8px;
+}
+section.overview .cont_sub {
+  flex: 1;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black);
+}
+
+section.scenarios {
+}
+/* .wrap {
   display: flex;
   flex-flow: column;
   gap: 24px;
@@ -11,7 +51,11 @@
   gap: 12px;
   padding: 24px;
   min-height: 240px;
-  background-color: #111;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(17, 17, 17, 0.9) 100%
+  );
 }
 .wrap h2 {
   display: block;
@@ -55,7 +99,6 @@ section.head {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgb(255, 255, 255);
   background: radial-gradient(
     circle,
     rgba(255, 255, 255, 0) 50%,
@@ -88,5 +131,9 @@ section.head {
   color: #2277ff;
 }
 .cont li:hover {
-  background-color: #222;
-}
+  background: radial-gradient(
+    circle,
+    rgba(34, 119, 255, 0.1) 50%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
+} */
