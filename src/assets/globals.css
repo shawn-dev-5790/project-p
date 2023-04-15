@@ -1,5 +1,5 @@
 :root {
-  --gray_blue: #9ca3af;
+  --gray_blue: #aeb8c7;
   --blue: #2277ff;
   --blue_light: #3f86f7;
   --blue_deep: #1f6be5;
@@ -13,8 +13,9 @@ body {
   overflow-x: hidden;
 }
 body {
-  background: #000;
-  color: #dee9fa;
+  background: var(--black);
+  background: linear-gradient(30deg, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 8, 1) 50%, rgba(0, 0, 0, 1) 90%);
+  color: var(--mono_1);
 }
 * {
   box-sizing: border-box;
