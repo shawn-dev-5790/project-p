@@ -68,6 +68,14 @@ a:focus {
 a:active {
   color: var(--blue_deep);
 }
+button {
+  display: flex;
+  padding: 8px 12px;
+  background-color: var(--black);
+  color: var(--white);
+  outline: 0 none;
+  border: 1px solid var(--mono_1);
+}
 ::-webkit-scrollbar {
   display: none;
 }

@@ -7,14 +7,12 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'encrypted-tbn0.gstatic.com',
+        hostname: 'p.kindpng.com',
         port: '',
-        pathname: '/images/**',
+        pathname: '/**',
       },
     ],
   },
 }
 
 module.exports = nextConfig
-
-//https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKgwZr4PeCzY6OAQ1om5D8fCHlPn35rcanOQ&usqp=CAU

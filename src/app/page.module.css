@@ -2,6 +2,8 @@
   display: flex;
   flex-flow: column;
   gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .home section {
   display: flex;
@@ -30,7 +32,7 @@ section.row {
   background: radial-gradient(circle, rgba(17, 17, 17, 0.1) 10%, rgba(17, 17, 17, 0.9) 90%);
 }
 section.row .cont_main {
-  flex: 1.5;
+  flex: 1;
   display: flex;
   flex-flow: column;
   gap: 8px;

@@ -1,0 +1,44 @@
+.card {
+  overflow: hidden;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 6px;
+}
+.card .info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 50%, rgba(17, 17, 17, 0.9) 90%);
+  font-size: 12px;
+}
+.card .info:hover {
+  background-color: rgba(17, 17, 17, 0.9);
+  color: var(--white);
+}
+.card .info * {
+  font-weight: 700;
+  color: var(--black);
+}
+.card .info:hover * {
+  color: var(--white);
+}
+.card strong {
+  font-size: 10px;
+}
+.card img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+}
+.card p {
+  display: flex;
+}
