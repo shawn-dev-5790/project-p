@@ -16,7 +16,7 @@ export default function RootLayout({ children }: GILayout) {
       <body>
         <div className={ui.app}>
           <header className={ui.head}>
-            <Link className={ui.logo} href={repositoryURL} target='_black'>
+            <Link className={ui.logo} href={'/'}>
               PP
             </Link>
             <div className={ui.title}>

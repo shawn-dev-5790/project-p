@@ -10,6 +10,7 @@ export default function Home() {
   const HomeScenariosFactoryMD = getFile(['docs', 'home.scenarios.factory.md'])
   const HomeScenariosMediatorMD = getFile(['docs', 'home.scenarios.mediator.md'])
   const HomeScenariosObserverMD = getFile(['docs', 'home.scenarios.observer.md'])
+  const HomeScenariosCommandMD = getFile(['docs', 'home.scenarios.command.md'])
 
   return (
     <div className={ui.home}>
@@ -46,6 +47,14 @@ export default function Home() {
       <section className={ui.row}>
         <div className={ui.cont_main}>
           <ReactMarkdown>{HomeScenariosObserverMD}</ReactMarkdown>
+        </div>
+        <div className={ui.cont_sub}>
+          <VideoCSR type='observer' />
+        </div>
+      </section>
+      <section className={ui.row}>
+        <div className={ui.cont_main}>
+          <ReactMarkdown>{HomeScenariosCommandMD}</ReactMarkdown>
         </div>
         <div className={ui.cont_sub}>
           <VideoCSR type='observer' />
